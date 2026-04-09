@@ -1,0 +1,8 @@
+# Exclude Laravel systems (they need separate deployment)
+Concord/
+IAS-SMS/
+
+# Exclude development files
+README_Profile.txt
+*.log
+.DS_Store

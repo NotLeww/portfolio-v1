@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayson Pinggoy | Full Stack Developer & Information Security Enthusiast</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <aside class="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="sidebar-container">
+      <h2 class="sidebar-title">Jayson Pinggoy</h2>
+      <nav class="sidebar-nav">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <main id="main-content" class="main-content" role="main">
+    <header class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Full Stack Developer</p>
+          <h1>Hi, I'm <span>Jayson "Lew" Pinggoy</span></h1>
+          <p class="description">4th-year BSIT student specializing in Information Security. Explore my portfolio to learn about my skills, projects, and how to get in touch.</p>
+        </div>
+        <div class="hero-image">
+          <img src="profile.png" alt="Profile picture of Jayson Pinggoy" class="profile-pic" />
+        </div>
+      </div>
+      <div class="hero-badge">Interactive Portfolio</div>
+    </header>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I'm Jayson "Lew" Pinggoy, a 4th-year BSIT student specializing in Information Security. I'm passionate about building robust and secure applications using modern technologies. My expertise spans full-stack development with HTML, CSS, JavaScript, PHP, Java, C++, and Python. I have hands-on experience with Laravel and Node.js for backend development, and I'm proficient with XAMPP for local development environments, as well as cloud databases like TiDB Cloud and Supabase.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills & Technology</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, Java, C++, Python</li>
+        <li><strong>Frameworks & Tools:</strong> Laravel, Node.js, XAMPP</li>
+        <li><strong>Databases:</strong> TiDB Cloud, Supabase, MySQL</li>
+        <li><strong>Specialization:</strong> Information Security, System Integration, HR & Logistics Systems</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Hospital System</h3>
+          <p>A comprehensive HR-focused hospital management system featuring employee information management, job posting system, payroll calculations, and financial integrations.</p>
+          <div class="project-links">
+            <a href="https://concord-rn71.onrender.com/portal/login" target="_blank" rel="noopener" aria-label="Access Hospital System" class="access-link">🚀 Access System</a>
+            <a href="https://github.com/euonoia/Concord" target="_blank" rel="noopener" aria-label="View Hospital System on GitHub">View on GitHub →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <h3>School Management System</h3>
+          <p>An integrated platform for managing student documentation, credential requests, and academic records with secure access controls.</p>
+          <a href="https://github.com/NotLeww/IAS-SMS" target="_blank" rel="noopener" aria-label="View School Management System on GitHub">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Get In Touch</h2>
+      <form id="contactForm" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required aria-required="true"></textarea>
+        </div>
+        <button type="submit" aria-label="Send message">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:jaysonpinggoy11@gmail.com">jaysonpinggoy11@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jayson-lew-pinggoy" target="_blank" rel="noopener">Jayson (Lew) Pinggoy</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/NotLeww" target="_blank" rel="noopener">NotLeww</a></p>
+        <p><strong>Phone:</strong> +63 995 306 7350</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Jayson Pinggoy. All rights reserved. | Full Stack Developer & Information Security Enthusiast</p>
+    </footer>
+  </main>
+
+  <section class="chat-section" id="chat">
+    <h2>Ask Me Anything</h2>
+    <div class="chat-window" id="chatWindow" role="log" aria-live="polite" aria-label="Chat messages">
+      <div class="message bot-message">
+        <div class="message-content">
+          <strong>Assistant:</strong>
+          <p>Hi! Select a topic or ask me any question about my background, skills, and projects. I'm here to help!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="control-row custom-input-row">
+        <label for="customInput">Ask me anything</label>
+        <div class="input-group">
+          <input id="customInput" type="text" placeholder="Type your question here..." aria-describedby="customHelp" />
+          <button id="sendBtn" aria-label="Send custom question">Send</button>
+        </div>
+      </div>
+      <div id="customHelp" class="sr-only">Type your own question about the portfolio.</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
